@@ -1,0 +1,56 @@
+
+
+<ion-content>
+  <div>
+    <ion-row >
+      <ion-col text-center class="mx-auto" size="12">
+        <img class="circular" [src]="foto" *ngIf="foto" />
+      </ion-col>
+
+      <ion-col text-center class="mx-auto" size="12">
+        <input type="file" id="file"   (change)="onFotoChanged($event)" #fileInput required /> 
+        <label for="file">Agregar Foto</label>   
+      </ion-col>
+    </ion-row>
+  </div>
+  <form padding [formGroup]="validations_form" (ngSubmit)="onSubmit(validations_form.value)">
+    <ion-list style="background: transparent;" class="tarjeta mx-auto">
+      <ion-item lines="none">
+        <p style="padding-top: 2rem;" color="ion-color-dark">
+          <b>Nombre:</b>
+          <input placeholder="Nombre" type="text" formControlName="nombre" /></p>
+
+      </ion-item>
+      <ion-item lines="none">
+        <p style="padding-top: 2rem;" color="ion-color-dark">
+          <b>Apellido:</b>
+          <input placeholder="Apellido" type="text" formControlName="apellido" /></p>
+
+      </ion-item>
+      <ion-item lines="none">
+        <p style="padding-top: 2rem;" color="ion-color-dark">
+          <b>Teléfono:</b>
+          <input placeholder="00000000" type="text" formControlName="telefono" /></p>
+
+      </ion-item>
+
+      <ion-item lines="none">
+        <p color="ion-color-dark"><b>Código Postal:</b>
+          <input placeholder="000000" type="number" formControlName="codigoPostal" />
+        </p>
+
+      </ion-item>
+      <ion-item lines="none">
+        <p position="floating" color="ion-color-dark">
+          <b>Dirección:</b>
+          <input placeholder="Dirección" type="text" formControlName="direccion" />
+        </p>
+
+      </ion-item>
+    </ion-list>
+    <div text-center>
+      <ion-button class="submit-btn" expand="block" type="submit" [disabled]="!validations_form.valid">Registrar</ion-button>
+      </div>
+  </form>
+
+</ion-content>

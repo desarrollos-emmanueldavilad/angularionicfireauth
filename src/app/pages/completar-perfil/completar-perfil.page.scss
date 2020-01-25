@@ -1,0 +1,210 @@
+.navbar {
+    background: black;
+}
+
+.logo{
+    width: 2rem;
+    margin-top: -0.5rem;
+    margin-left: -0.5rem;
+    margin-right: 0.5rem;
+}
+
+.navbar .navbar-expand-lg{
+    background: #26a6ff;
+}
+
+
+input{
+    border: none;
+    text-transform: capitalize;
+}
+
+ion-item{
+    font-size: initial;
+}
+
+.circular{
+    position: relative;
+    border-radius: 50%;
+    height: 8rem;
+    width: 8rem;
+    z-index: 1;
+    margin-bottom: -1rem;
+    margin-left: 1rem;
+}
+
+.tarjeta{
+    position: relative;
+    z-index: 0;
+    justify-content: center;
+    width: 21rem;
+    border-radius: 25px;
+    min-height: rem;
+    min-width: 21rem;
+
+}
+ion-label{
+    position: absolute;
+    left: 0;
+    font-size: initial;
+}
+
+.botones{
+    width: 13rem;
+    border-radius: 5px;
+    height: 2.5rem;
+    background: #26a6ff;
+    box-shadow: 1px 1px black;
+    color: white;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.boton-foto{
+    width: 10rem;
+    border-radius: 5px;
+    height: 2rem;
+    background: #26a6ff;
+    box-shadow: 1px 1px black;
+    margin-bottom: 1rem;
+    color: white;
+
+}
+
+.boton-borrar{
+    width: 20rem;
+    border-radius: 5px;
+    height: 2.5rem;
+    margin-top: 0.5rem;
+    background: white;
+    box-shadow: 1px 1px black;
+    margin-bottom: 5;
+}
+
+.caja{
+    padding-left: 1rem !important;
+    background: white;
+    margin-bottom: -0.9rem;
+    font-size: initial;
+}
+
+hr{
+    color: black;
+    background: black;
+    margin-left: -20rem;
+}
+
+p{
+    width: 100%;
+}
+
+textarea{
+    width: 100%;
+    border: none;
+}
+
+ion-item{
+    --background: rgba(255, 255, 255, 0.7);
+}
+
+input{
+    background: transparent;
+}
+
+textarea{
+    background: transparent;
+}
+
+.desktop{
+    display: none;
+}
+
+
+@media (min-width:414px) and (max-width:736px){
+
+    .circular{
+        position: relative;
+        border-radius: 50%;
+        height: 8rem;
+        width: 8rem;
+        z-index: 1;
+        margin-bottom: -1rem;
+        margin-left: 2rem;
+    }
+    
+    .tarjeta{
+        position: relative;
+        z-index: 0;
+        margin-top: -3rem;
+        justify-content: center;
+        margin-left: 1rem;
+        width: 18rem;
+        border-radius: 25px;
+        min-height: 20rem;
+        min-width: 20rem;
+    
+    }
+
+}
+
+@media (min-width: 1024px) and (max-width:1920px){
+    .tarjeta{
+        position: relative;
+        z-index: 0;
+        justify-content: center;
+        width: 30rem;
+        border-radius: 25px;
+        min-height: rem;
+        min-width: 30rem;    
+    }
+
+    .telefono{
+        display: none;
+    }
+
+    .desktop{
+        display: block;
+    }
+
+    .input-img{
+        margin-top: 1.5rem;
+    }
+
+
+
+    [type="file"] {
+        border: 0;
+        clip: rect(0, 0, 0, 0);
+        height: 1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute !important;
+        white-space: nowrap;
+        width: 1px;
+      }
+       
+      [type="file"] + label {
+        color: black;
+          background: rgba(38, 166, 255, 0.75);
+          border-radius: 5px;
+          padding-top: 0.4rem;
+          height: 2.2rem;
+          margin-top: 2rem;
+          font-size: 1.1rem;
+          width: 13rem;
+          font-weight: bold;
+        cursor: pointer;
+        display: inline-block;
+        padding-left: 2rem 4rem;
+      }
+        
+      [type="file"]:focus + label,
+      [type="file"] + label:hover {
+          background-color: rgba(38, 166, 255, 0.90);
+      }
+        
+      [type="file"]:focus + label {
+        outline: 1px solid #000;
+      }
+}
+
